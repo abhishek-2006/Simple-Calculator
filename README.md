@@ -16,12 +16,3 @@ This is a simple calculator built with **HTML**, **CSS**, and **JavaScript**.
    git clone https://github.com/yourusername/simple-calculator.git
 
 2. Open the project folder and open the index.html file in your browser.
-
-## File Structure
-```graphql
-simple-calculator/ 
-│ 
-├── index.html # The main HTML file 
-├── styles.css # The stylesheet for the calculator 
-└── script.js # The JavaScript functionality
-
