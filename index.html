@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="keypad">
+            <button class="btn function" onclick="clearScreen()">AC</button>
+            <button class="btn function backspace" onclick="deleteChar()" title="Backspace"><i class="fas fa-backspace"></i></button>
+            <button class="btn operator" onclick="appendValue('%')"><i class="fas fa-percent"></i></button>
+            <button class="btn operator" onclick="appendValue('/')"><i class="fas fa-divide"></i></button>
+            <button class="btn number" onclick="appendValue('7')">7</button>
+            <button class="btn number" onclick="appendValue('8')">8</button>
+            <button class="btn number" onclick="appendValue('9')">9</button>
+            <button class="btn operator" onclick="appendValue('*')"><i class="fas fa-times"></i></button>
+            <button class="btn number" onclick="appendValue('4')">4</button>
+            <button class="btn number" onclick="appendValue('5')">5</button>
+            <button class="btn number" onclick="appendValue('6')">6</button>
+            <button class="btn operator" onclick="appendValue('-')"><i class="fas fa-minus"></i></button>
+            <button class="btn number" onclick="appendValue('1')">1</button>
+            <button class="btn number" onclick="appendValue('2')">2</button>
+            <button class="btn number" onclick="appendValue('3')">3</button>
+            <button class="btn operator" onclick="appendValue('+')"><i class="fas fa-plus"></i></button>
+            <button class="btn blank"></button>
+            <button class="btn number zero" onclick="appendValue('0')">0</button>
+            <button class="btn dot" onclick="appendValue('.')"><i class="fas fa-circle"></i></button>
+            <button class="btn equals" onclick="calculate()"><i class="fas fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
